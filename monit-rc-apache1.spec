@@ -45,4 +45,4 @@ fi
 
 %files
 %defattr(644,root,root,755)
-%{_sysconfdir}/monit/apache.monitrc
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/monit/*.monitrc
