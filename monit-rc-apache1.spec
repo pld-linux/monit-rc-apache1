@@ -2,13 +2,13 @@ Summary:	monitrc file for monitoring Apache 1.x web server
 Summary(pl.UTF-8):	Plik monitrc do monitorowania serwera WWW Apache 1.x
 Name:		monit-rc-apache1
 Version:	1.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/System
 Source0:	apache1.monitrc
 BuildRequires:	rpmbuild(macros) >= 1.268
 Requires(post,postun):	monit
-Requires:	apache-base >= 1.3.39-2
+Requires:	apache1-base >= 1.3.39-2
 Requires:	monit
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
